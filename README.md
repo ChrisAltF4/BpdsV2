@@ -1,40 +1,75 @@
-<<<<<<< HEAD
-# BpdsV2
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Todo List — BPDS
 
-## Getting Started
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+</p>
 
-First, run the development server:
+A to-do list application (**full CRUD**) built with **Next.js**, **TypeScript**, and **Tailwind CSS**, developed as a team for the Software Development course.
+
+<p align="center">
+
+![To-do list view](./Screenshots/captura-lista-tareas.png)
+
+</p>
+
+---
+
+## 📑 Contents
+
+- [Installation](#-installation)
+- [Run the project](#️-run-the-project-locally)
+- [Features](#-main-features)
+- [Team members](#-team-members)
+- [Technologies](#️-technologies-used)
+
+---
+
+## 🚀 Installation
+
+Clone the repository and install the project dependencies:
+
+```bash
+git clone https://github.com/ChrisAltF4/BPDS.git
+cd BPDS
+npm install
+```
+
+## ▶️ Run the project locally
+
+Once the dependencies are installed, start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open your browser at **[http://localhost:3000](http://localhost:3000)** to see the application running.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Main features
 
-## Learn More
+The application implements the full **CRUD** cycle on tasks, along with a filter system and a trash for deleted tasks.
 
-To learn more about Next.js, take a look at the following resources:
+| Feature | Description |
+|---|---|
+| ➕ **Create** | Type in the text field and press **Enter** to add a task (no button needed). |
+| 📋 **Read** | All tasks are automatically displayed in the main list. |
+| ✅ **Update (cross out)** | Click the circle on each task to mark it as completed. It gets crossed out visually, **without being deleted**. |
+| ✏️ **Update (edit)** | Click on a task's text to edit it in place. The change is saved automatically when you click outside the field (no "save" button). |
+| ❌ **Delete** | The **✕** button on each task removes it completely from the main list. |
+| 🔍 **Filters** | **All / Active / Completed / Deleted** buttons to view only the tasks in each category. |
+| 🗑️ **Deleted tasks trash** *(new feature)* | When a task is deleted, its name is saved to a history. You can view it from the **Deleted** tab, which shows only the names (no option to restore them). |
+| 🧹 **Clear Completed** | Deletes all tasks already marked as completed in one go. |
+| 🔢 **Task counter** | Shows how many tasks are still pending ("X item left"). |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Technologies used
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> 43e8975 (Initial Commit)
+- [Next.js](https://nextjs.org/) (App Router)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React](https://react.dev/) (useState, useEffect)
